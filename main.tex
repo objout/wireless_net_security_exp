@@ -1,0 +1,133 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Define Article %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Define Article %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[UTF8, 12pt]{ctexart}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Using Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage[UTF8]{ctex} % 中文
+\usepackage{geometry}
+\usepackage{graphicx} % 图片
+%\usepackage{amssymb}
+%\usepackage{amsmath}
+%\usepackage{amsthm}
+%\usepackage{empheq}
+\usepackage{mdframed}
+\usepackage{booktabs}
+%\usepackage{lipsum}
+\usepackage{color}
+\usepackage{psfrag}
+%\usepackage{bm}
+%\usepackage{pdfpages}
+%\usepackage{pgfplots}
+\usepackage{float}
+\usepackage{hyperref}
+%\usepackage[outputdir=./build]{minted} % 代码
+\usepackage{subfiles} % 多文件
+%\usepackage{unicode-math} % 数学公式自定义字体
+%\usepackage{physics} % 微分符号
+%\usepackage{tasks} % 选择题
+\usepackage{xcolor} % 自定义颜色
+%\usepackage{pifont} % 带圈的数字
+%\usepackage{tcolorbox} % 框
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Other Settings
+%\hypersetup{hypertex=true,
+  %bookmarks=true,
+  %bookmarksnumbered=true,
+  %hidelinks,
+  %colorlinks=true,
+  %linkcolor=blue,
+  %anchorcolor=blue,
+  %citecolor=blue,
+  %urlcolor=blue,
+  %pdftitle={Unknown},
+  %pdfauthor={Unknown},
+  %pdfsubject={Unknown},
+  %pdfkeywords={Unknown},
+  %pdfstartview=Fit,
+  %pdfcreator={Unknown},
+%pdfproducer={Unknown}}
+
+% 代码
+%\usepackage{listings}
+%\lstset{
+%basicstyle=\ttfamily,
+%keywordstyle=\bfseries,
+%commentstyle=\rmfamily\itshape,
+%stringstyle=\ttfamily,
+%flexiblecolumns,
+%numbers=left,
+%showspaces=false,
+%numberstyle=\zihao{-5}\ttfamily,
+%showstringspaces=false,
+%captionpos=t,
+%frame=lrtb,
+%}
+
+%\PassOptionsToPackage{AutoFakeBold}{xeCJK}
+%\PassOptionsToPackage{quiet}{fontspec}
+
+% 自定义数学公式
+%\DeclareMathOperator{\arccot}{arccot}
+
+\graphicspath{{figures/}}
+
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
+% 首行缩进2个中文字符
+
+%\usepackage{setspace}
+%\renewcommand{\baselinestretch}{1.5}
+% 1.5倍行距
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Page Setting %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\geometry{a4paper}
+%\geometry{papersize={21cm,29.7cm}}
+% 默认大小为A4
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+% 设置四级目录与标题
+%\geometry{left=3.18cm,right=3.18cm,top=2.54cm,bottom=2.54cm}
+% 默认页边距为1英尺与1.25英尺
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Define some useful colors %%%%%%%%%%%%%%%%%%%%%%%%%%
+%\definecolor{ocre}{RGB}{243,102,25}
+%\definecolor{mygray}{RGB}{243,243,244}
+%\definecolor{deepGreen}{RGB}{26,111,0}
+%\definecolor{shallowGreen}{RGB}{235,255,255}
+%\definecolor{deepBlue}{RGB}{61,124,222}
+%\definecolor{shallowBlue}{RGB}{235,249,255}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Define an orangebox command %%%%%%%%%%%%%%%%%%%%%%%%
+%\newcommand\orangebox[1]{\fcolorbox{ocre}{mygray}{\hspace{1em}#1\hspace{1em}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title & Author %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{《无线网络安全》实验报告}
+%\author{author}
+\date{\today}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+  %\includepdf[pages={1-1}]{./assets/cover.pdf}
+  %\maketitle
+  \tableofcontents
+  \newpage
+
+  % abstract(500)
+  % keywords(3-5)
+
+  \subfile{./sections/1_实验背景.tex}
+  %\subfile{./sections/2_实验目的.tex}
+  %\subfile{./sections/3_实验环境.tex}
+  %\subfile{./sections/4_实验工具.tex}
+  %\subfile{./sections/5_实验原理.tex}
+  %\subfile{./sections/6_实验步骤.tex}
+  %\subfile{./sections/7_防范措施.tex}
+  %\subfile{./sections/8_实验总结.tex}
+\end{document}
