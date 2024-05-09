@@ -40,8 +40,47 @@ Download Tool(需先将 ESP8266 同 PC 连接).
 
 设置完毕后点击 ``Start'' 开始烧录.
 
-至此我们完成了环境的设置和代码的上传, 下面就是``指挥'' ESP8266 实施攻击.
+至此我们完成了环境设置和代码上传, 下面就是``指挥'' ESP8266 实施攻击.
 %
 \subsection{实施攻击}
-\subsection{结果分析}
+首先确保客户端(受害者, Victim)已经连接到 AP:
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=0.30\textwidth]{normal_ping.jpg}
+  \end{center}
+  \caption{Victim is online.}
+\end{figure}
+
+使用安信可串口调试助手扫描附近的通信:
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=0.40\textwidth]{attacker_scan.jpg}
+  \end{center}
+  \caption{Attacker scans stations.}
+\end{figure}
+
+攻击者选择受害者:
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=0.40\textwidth]{attacker_select_stations.jpg}
+  \end{center}
+  \caption{Attacker selects the victim.}
+\end{figure}
+
+攻击者实施攻击:
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=0.40\textwidth]{attacker_attack.jpg}
+  \end{center}
+  \caption{Attacker starts attacking.}
+\end{figure}
+
+受害者下线:
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=0.30\textwidth]{abnormal_ping.jpg}
+  \end{center}
+  \caption{Victim is offline.}
+\end{figure}
+%
 \end{document}
